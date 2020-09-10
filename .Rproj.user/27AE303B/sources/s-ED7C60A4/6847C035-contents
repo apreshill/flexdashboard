@@ -1,0 +1,14 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+README.R?md
+^inst/examples/.*rsconnect$
+^inst/examples/.+\.html
+^inst/examples/.+_files
+^inst/examples/.+\.Rnb\.cached
+^examples/*
+
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
+^vignettes
+^\.github$
