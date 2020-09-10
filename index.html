@@ -49,7 +49,7 @@
       <ul class="nav navbar-nav"></ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="articles/start.html">Get started</a>
+  <a href="articles/basics.html">Get started</a>
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -58,8 +58,20 @@
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu">
-<li>
-      <a href="articles/start.html">flexdashboard</a>
+<li class="dropdown-header">Learn</li>
+    <li>
+      <a href="articles/using.html">Using flexdashboard</a>
+    </li>
+    <li>
+      <a href="articles/shiny.html">Using shiny with flexdashboard</a>
+    </li>
+    <li class="divider">
+    <li class="dropdown-header">Examples</li>
+    <li>
+      <a href="articles/layouts.html">Sample layouts</a>
+    </li>
+    <li>
+      <a href="articles/examples.html">Example projects</a>
     </li>
   </ul>
 </li>
@@ -99,8 +111,37 @@
 <li><p><a href="http://rmarkdown.rstudio.com/flexdashboard/using.html#storyboards">Storyboard</a> layouts for presenting sequences of visualizations and related commentary.</p></li>
 <li><p>Optionally use <a href="http://shiny.rstudio.com">Shiny</a> to drive visualizations dynamically.</p></li>
 </ul>
-<p><a href="https://beta.rstudioconnect.com/jjallaire/htmlwidgets-d3heatmap/"><img src="http://rmarkdown.rstudio.com/flexdashboard/images/htmlwidgets-d3heatmap.png" width="276" height="220"></a>   <a href="https://beta.rstudioconnect.com/jjallaire/htmlwidgets-ggplotly-geoms/"><img src="http://rmarkdown.rstudio.com/flexdashboard/images/plotly.png" width="276" height="220"></a>   <a href="https://jjallaire.shinyapps.io/shiny-biclust/"><img src="http://rmarkdown.rstudio.com/flexdashboard/images/shiny-biclust.png" width="276" height="220"></a></p>
-<p>Learn more about flexdashboard: <a href="http://rmarkdown.rstudio.com/flexdashboard/" class="uri">http://rmarkdown.rstudio.com/flexdashboard/</a></p>
+<p>Learn more about flexdashboard: <a href="https://flexdashboard.rmarkdown.io" class="uri">https://flexdashboard.rmarkdown.io</a></p>
+<div id="examples" class="section level2">
+<h2 class="hasAnchor">
+<a href="#examples" class="anchor"></a>Examples</h2>
+<p><a href="https://beta.rstudioconnect.com/jjallaire/htmlwidgets-d3heatmap/"><img src="http://rmarkdown.rstudio.com/flexdashboard/images/htmlwidgets-d3heatmap.png" width="265" height="212"></a>  <a href="https://beta.rstudioconnect.com/jjallaire/htmlwidgets-ggplotly-geoms/"><img src="http://rmarkdown.rstudio.com/flexdashboard/images/plotly.png" width="265" height="212"></a>  <a href="https://jjallaire.shinyapps.io/shiny-biclust/"><img src="http://rmarkdown.rstudio.com/flexdashboard/images/shiny-biclust.png" width="265" height="212"></a></p>
+</div>
+<div id="installation" class="section level2">
+<h2 class="hasAnchor">
+<a href="#installation" class="anchor"></a>Installation</h2>
+<p>Install the <strong>flexdashboard</strong> package from CRAN as follows:</p>
+<div class="sourceCode" id="cb1"><pre class="downlit">
+<span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"flexdashboard"</span>)
+</pre></div>
+<p>To author a flexdashboard you create an <a href="http://rmarkdown.rstudio.com">R Markdown</a> document with the <code><a href="reference/flex_dashboard.html">flexdashboard::flex_dashboard</a></code> output format. You can do this from within RStudio using the <strong>New R Markdown</strong> dialog:</p>
+<p><img src="reference/figures/NewRMarkdown.png"></p>
+<p>If you are not using RStudio, you can create a new <code>flexdashboard</code> R Markdown file from the R console:</p>
+<div class="sourceCode" id="cb2"><pre class="downlit">
+<span class="kw">rmarkdown</span>::<span class="fu"><a href="https://rdrr.io/pkg/rmarkdown/man/draft.html">draft</a></span>(<span class="st">"dashboard.Rmd"</span>, 
+                 template = <span class="st">"flex_dashboard"</span>, 
+                 package = <span class="st">"flexdashboard"</span>)
+</pre></div>
+</div>
+<div id="getting-help" class="section level2">
+<h2 class="hasAnchor">
+<a href="#getting-help" class="anchor"></a>Getting help</h2>
+<p>There are two main places to get help with flexdashboard:</p>
+<ul>
+<li><p>The <a href="https://community.rstudio.com/tag/flexdashboard">RStudio community</a> is a friendly place to ask any questions about flexdashboard.</p></li>
+<li><p><a href="https://stackoverflow.com/questions/tagged/flexdashboard">Stack Overflow</a> is a great source of answers to common flexdashboard questions. It is also a great place to get help, once you have created a reproducible example that illustrates your problem.</p></li>
+</ul>
+</div>
 </div>
   </div>
 
